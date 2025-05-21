@@ -2,96 +2,128 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    background: #fff;
+}
+
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  .app-container {
-    background: #111;
+    background-color: #e9eff1;
+}
+
+header {
+    background-color: #1877f2;
+    padding: 10px 20px;
     color: white;
-    max-width: 400px;
-    margin: auto;
-    padding-bottom: 60px;
-  }
-  
-  .post {
-    background: #222;
-    border-radius: 12px;
-    margin: 20px 10px;
-    padding: 10px;
-  }
-  
-  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .user-info img {
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+    margin-left: 20px;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: bold;
+}
+
+.feed {
+    flex-grow: 1;
+}
+
+.post {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header img {
     width: 40px;
     height: 40px;
-  }
-  
-  .user-details {
-    margin-left: 10px;
-  }
-  
-  .username {
-    width: 80px;
-    height: 10px;
-    background: #555;
-    border-radius: 4px;
-    margin-bottom: 5px;
-  }
-  
-  .verified i {
-    color: #1da1f2;
-    margin-left: 4px;
-  }
-  
-  .timestamp {
-    width: 100px;
-    height: 8px;
-    background: #444;
-    border-radius: 4px;
-  }
-  
-  .post-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  
-  .actions {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
     display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    font-size: 20px;
-  }
-  
-  .actions i {
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.time {
+    color: #7e7e7e;
+    font-size: 12px;
+}
+
+.post-content {
+    margin-top: 15px;
+}
+
+.post-footer {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #f0f2f5;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    color: white;
-  }
-  
-  .navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    max-width: 400px;
-    background: #ccc;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    border-top: 1px solid #999;
-  }
-  
-  .navbar i {
-    font-size: 20px;
-    color: black;
-  }
-  
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #e4e6eb;
+}
