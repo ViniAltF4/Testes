@@ -33,6 +33,16 @@ canvas {
     margin-top: 20px;
 }
 
+label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #333;
+}
+
+input[type="color"], input[type="range"] {
+    margin: 10px 0;
+}
+
 button {
     padding: 10px 20px;
     font-size: 1rem;

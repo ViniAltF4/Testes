@@ -10,7 +10,20 @@
 
     <div class="container">
         <h1>Desenhe Aqui!</h1>
+        
+        <!-- Controles para cor e espessura -->
+        <div class="controls">
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor" value="#000000">
+
+            <label for="espessura">Espessura:</label>
+            <input type="range" id="espessura" min="1" max="10" value="3">
+        </div>
+
+        <!-- Canvas de desenho -->
         <canvas id="desenho" width="800" height="600"></canvas>
+
+        <!-- Botão para limpar -->
         <div class="controls">
             <button id="limpar">Limpar</button>
         </div>
