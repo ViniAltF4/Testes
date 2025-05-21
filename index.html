@@ -3,54 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Clone</title>
+    <title>Desenhando com o Mouse</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar no Facebook">
-            </div>
-            <div class="profile">
-                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Perfil">
-            </div>
-        </div>
-    </header>
 
-    <div class="main-content">
-        <div class="sidebar">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Amigos</a></li>
-                <li><a href="#">Grupos</a></li>
-                <li><a href="#">Marketplace</a></li>
-            </ul>
-        </div>
-
-        <div class="feed">
-            <div class="post">
-                <div class="post-header">
-                    <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="User">
-                    <div class="user-info">
-                        <p class="name">João Silva</p>
-                        <p class="time">5 minutos atrás</p>
-                    </div>
-                </div>
-                <div class="post-content">
-                    <p>Essa é uma postagem de exemplo!</p>
-                </div>
-                <div class="post-footer">
-                    <button>Curtir</button>
-                    <button>Comentar</button>
-                    <button>Compartilhar</button>
-                </div>
-            </div>
+    <div class="container">
+        <h1>Desenhe Aqui!</h1>
+        <canvas id="desenho" width="800" height="600"></canvas>
+        <div class="controls">
+            <button id="limpar">Limpar</button>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
